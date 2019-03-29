@@ -1,10 +1,161 @@
-body {
-    font-family: 'Roboto', sans-serif;
+/* fonts */
+@font-face {
+    font-family: 'Burbank Big Cd Bk';
+    src: url('../fonts/BurbankBigCondensed-Black.woff2') format('woff2'),
+        url('../fonts/BurbankBigCondensed-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
 }
 
-#offCanvas, #offCanvasRight {
-    background-color: #fff;
-    z-index: 1080;
+@font-face {
+    font-family: 'Burbank Big Rg Bk';
+    src: url('../fonts/BurbankBigRegular-Black.woff2') format('woff2'),
+        url('../fonts/BurbankBigRegular-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Burbank Big Rg Bd';
+    src: url('../fonts/BurbankBigRegular-Bold.woff2') format('woff2'),
+        url('../fonts/BurbankBigRegular-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Burbank Small';
+    src: url('../fonts/BurbankSmall-Bold.woff2') format('woff2'),
+        url('../fonts/BurbankSmall-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Burbank Small';
+    src: url('../fonts/BurbankSmall-Medium.woff2') format('woff2'),
+        url('../fonts/BurbankSmall-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Burbank Small';
+    src: url('../fonts/BurbankSmall-Black.woff2') format('woff2'),
+        url('../fonts/BurbankSmall-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Burbank Small', Arial;
+    font-size: 1rem;
+    color: #2a2a2a;
+}
+a {
+    color: #828282;
+    text-decoration: underline;    
+}
+a:hover {
+    color: #828282;
+    text-decoration: none;
+}
+h2 {
+    font-family: 'Burbank Big Cd Bk', Arial;
+    font-size: 4.5rem;
+    line-height: 1;
+    text-transform: uppercase;
+}
+.top-line {
+    background-color: #2a2a2a;
+}
+
+.navbar-toggler {
+    color: rgba(255, 255, 255, 0.5);
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+#novelty h2 {
+    color: #c128e2;
+    text-align: center;
+}
+
+.card-product {
+    font-family: 'Burbank Big Cd Bk', Arial;    
+    border: none;
+    height: 100%;
+}
+.card-product .card-body {
+    padding: 0;
+}
+.card-product .card-title {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: #010101;
+    margin: .75rem 0;
+}
+.card-product .card-price {
+    margin-bottom: .75rem;
+}
+.card-product .card-price .price {
+    font-size: 1.125rem;
+    color: #c228e2;
+}
+.card-product .card-price .discount {
+    font-size: 1rem;
+    color: #a0a0a0;
+    text-decoration: line-through;
+}
+.card-product .card-footer {
+    background-color: transparent;
+    border-top: none;
+    padding: 0;
+}
+.card-product .btn-buy {
+    width: 100%;
+    background-color: #00a8ff;
+    color: #fff;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    border-radius: 0;
+    text-decoration: none;
+    padding: .3rem 0 .2rem 0;   
+}
+.card-product .btn-buy:hover {
+    background-color: #c228e2;
+}
+.link-view-all {
+    display: block;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.125rem;
+}
+
+
+#winners {
+    background: linear-gradient(to bottom, #fc404f, #fec41b);
+}
+#winners h2 {
+    color: #fff;
+}
+#characters {
+    background: url(../img/blue-bg.jpg) center no-repeat;
+}
+#characters h2 {
+    color: #fff;
+    text-align: center;
+}
+#toys h2 {
+    color: #c128e2;
+    text-align: center;    
+}
+#buy h2 {
+    color: #c128e2;
+    text-align: center;    
+}
+
+#footer {
+    background-color: #2a2a2a;
 }
 
 /*

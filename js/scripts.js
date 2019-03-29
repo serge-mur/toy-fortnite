@@ -1,15 +1,5 @@
 $(document).ready(function () {
 
-    $('#offCanvas').offcanvas({
-        modifiers: 'left, overlay',
-        triggerButton: '#triggerButton'
-    });
-
-    $('#offCanvasRight').offcanvas({
-        modifiers: 'right, overlay',
-        triggerButton: '#triggerButtonRight'
-    });
-
     $('.main-slider').slick({
 
     });
