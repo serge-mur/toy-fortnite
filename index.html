@@ -27,26 +27,24 @@
                     </button>
 
                     <div class="collapse navbar-collapse" id="navbarsDefault">
-                        <ul class="navbar-nav mr-auto">
-                            <li class="nav-item active">
-                                <a class="nav-link" href="#">Главная
-                                    <span class="sr-only">(current)</span>
-                                </a>
+                        <ul class="navbar-nav" id="main-menu">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#novelty">Новинки</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Новинки</a>
+                                <a class="nav-link" href="#winners">Победители</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Персонажи</a>
+                                <a class="nav-link" href="#characters">Персонажи</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Игрушки</a>
+                                <a class="nav-link" href="#toys">Игрушки</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Конкурс</a>
+                                <a class="nav-link" href="#contest">Конкурс</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Где купить?</a>
+                                <a class="nav-link" href="#buy">Где купить?</a>
                             </li>
                         </ul>
                     </div>
@@ -54,33 +52,34 @@
             </div>            
         </div>
 
-        <div class="main-slider">
-            <div>
-                <img class="img-fluid" src="img/First-banner-1-compressor.png" alt="">
-            </div>
-            <div>
-                <img class="img-fluid" src="img/First-banner-2-compressor.png" alt="">
-            </div>
-        </div>
-
-        <div class="container">
-            <div class="row">
-                <div class="col-4">
-                    <img class="img-fluid" src="img/Yellow.png" alt="">
+        <div class="main-slider-wrapper">
+            <div class="main-slider">
+                <div>
+                    <img class="img-fluid" src="img/First-banner-1-compressor.png" alt="">
                 </div>
-                <div class="col-8">
-                    <img class="img-fluid" src="img/2x2.png" alt="">
+                <div>
+                    <img class="img-fluid" src="img/First-banner-2-compressor.png" alt="">
                 </div>
             </div>
+            <div class="main-banners">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-4">
+                            <img class="img-fluid" src="img/Yellow.png" alt="">
+                        </div>
+                        <div class="col-8">
+                            <img class="img-fluid" src="img/2x2.png" alt="">
+                        </div>
+                    </div>
+                </div>                  
+            </div>
+          
         </div>
-
-
-
     </header>
 
     <main id="main" class="my-2">
 
-        <section id="novelty">
+        <section id="novelty" class="py-6">
             <div class="container">
                 <div class="row">
                     <div class="col-12">
@@ -150,145 +149,322 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-12">
+                    <div class="col-12 mt-5">
                         <a class="link-view-all" href="#">Ко всем новинкам</a>
                     </div>
                 </div>             
             </div>
         </section>
 
-        <section id="winners">
+        <section id="winners" class="py-6">
             <div class="container">
                 <div class="row">
                     <div class="col-6">
                         <img class="img-fluid" src="img/gift.png" alt="">
                     </div>                    
                     <div class="col-6">
-                        <h2>Счастливые победители прошлой недели</h2>
+                        <h2 class="mb-4">Счастливые победители прошлой недели</h2>
                         <ul>
-                            <li>123</li>
-                            <li>456</li>
-                            <li>789</li>
-                        </ul>                   
+                            <li>DED****LAMA@MAIL.RU</li>
+                            <li>DED****LAMA@MAIL.RU</li>
+                            <li>DED****LAMA@MAIL.RU</li>
+                        </ul>
                     </div>
                 </div>
 
             </div>
         </section>
 
-        <section id="characters">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <h2>Персонажи</h2>
-                    </div>
-                </div>                
-                <div class="row">
-                    <div class="col-12">
-                        123
+        <section id="characters" class="py-6">
+            <h2 class="mb-4">Персонажи</h2>
+            <div class="character-slider">
+
+                <!-- slide 1 -->                
+                <div class="slide">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="character-img">
+                                    <img class="img-fluid" src="img/character.png" alt="">
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="d-flex justify-content-between character-nav">
+                                    <a class="slick-prev-c" href="#" onclick="return false"><img src="img/left-arrow-ring.png" alt=""></a>
+                                    <div class="title w-100">Фигурки</div>
+                                    <a class="slick-next-c" href="#" onclick="return false"><img src="img/right-arrow-ring.png" alt=""></a>
+                                </div>
+                                <div class="character-wrapper p-2">
+                                    <div class="info">
+                                        <div class="row p-2">
+                                            <div class="col-4">
+                                                <img class="img-fluid" src="img/character-icon.png" alt="">
+                                            </div>
+                                            <div class="col-8">
+                                                <h3>Set raven<br> 1 фигурка персонажа</h3>
+                                                <p>Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов, но это не совсем так. Его корни уходят в один фрагмент классической латыни 45 года н.э., то есть более двух тысячелетий назад.</p>
+                                            </div>
+                                        </div>
+                                        <div class="text-center py-4">
+                                            <button class="btn btn-yellow-buy">Купить</button>                                    
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-3 mt-4"><a href="#"><img class="img-fluid" src="img/character-icon-mini.png" alt=""></a></div>
+                                        <div class="col-3 mt-4"><a href="#"><img class="img-fluid" src="img/character-icon-mini.png" alt=""></a></div>
+                                        <div class="col-3 mt-4"><a href="#"><img class="img-fluid" src="img/character-icon-mini.png" alt=""></a></div>
+                                        <div class="col-3 mt-4"><a href="#"><img class="img-fluid" src="img/character-icon-mini.png" alt=""></a></div>
+                                        <div class="col-3 mt-4"><a href="#"><img class="img-fluid" src="img/character-icon-mini.png" alt=""></a></div>
+                                        <div class="col-3 mt-4"><a href="#"><img class="img-fluid" src="img/character-icon-mini.png" alt=""></a></div>
+                                        <div class="col-3 mt-4"><a href="#"><img class="img-fluid" src="img/character-icon-mini.png" alt=""></a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>            
+                
+                <!-- slide 2 -->
+                <div class="slide">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="character-img">
+                                    <img class="img-fluid" src="img/lama2.png" alt="">
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="d-flex justify-content-between character-nav">
+                                    <a class="slick-prev-c" href="#" onclick="return false"><img src="img/left-arrow-ring.png" alt=""></a>
+                                    <div class="title w-100">Наборы</div>
+                                    <a class="slick-next-c" href="#" onclick="return false"><img src="img/right-arrow-ring.png" alt=""></a>
+                                </div>
+                                <div class="character-wrapper p-2">
+                                    <div class="info">
+                                        <div class="row p-2">
+                                            <div class="col-4">
+                                                <img class="img-fluid" src="img/character-icon2.png" alt="">
+                                            </div>
+                                            <div class="col-8">
+                                                <h3>Set raven<br> 1 фигурка персонажа</h3>
+                                                <p>Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов, но это не совсем так. Его корни уходят в один фрагмент классической латыни 45 года н.э., то есть более двух тысячелетий назад.</p>
+                                            </div>
+                                        </div>
+                                        <div class="text-center py-4">
+                                            <button class="btn btn-yellow-buy">Купить</button>                                    
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-3 mt-4"><a href="#"><img class="img-fluid" src="img/character-icon-mini2.png" alt=""></a></div>
+                                        <div class="col-3 mt-4"><a href="#"><img class="img-fluid" src="img/character-icon-mini2.png" alt=""></a></div>
+                                        <div class="col-3 mt-4"><a href="#"><img class="img-fluid" src="img/character-icon-mini2.png" alt=""></a></div>
+                                        <div class="col-3 mt-4"><a href="#"><img class="img-fluid" src="img/character-icon-mini2.png" alt=""></a></div>
+                                        <div class="col-3 mt-4"><a href="#"><img class="img-fluid" src="img/character-icon-mini2.png" alt=""></a></div>
+                                        <div class="col-3 mt-4"><a href="#"><img class="img-fluid" src="img/character-icon-mini2.png" alt=""></a></div>
+                                        <div class="col-3 mt-4"><a href="#"><img class="img-fluid" src="img/character-icon-mini2.png" alt=""></a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
         </section>
 
-        <section id="toys">
+        <section id="toys" class="my-6">
             <div class="container">
                 <div class="row">
-                    <div class="col-12">
+                    <div class="col-12 mb-4">
                         <h2>Игрушки</h2>
                     </div>
                 </div>
-                <div class="row">
+                
+                <div class="toys-slider">
+                    <!-- slide 1 -->
+                    <div>
+                        <div class="row">
+                            <div class="col-3">
+                                <div class="card card-product">
+                                    <img src="img/lama.png" class="card-img-top" alt="lama">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Игрушка мягкая Fortnite "Лама"</h5>
+                                        <div class="card-price">
+                                            <span class="price">8 726 руб.</span>
+                                            <span class="discount">9 725 руб.</span>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer">
+                                        <a href="#" class="btn btn-buy">В корзину</a>                                
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="card card-product">
+                                    <img src="img/lama.png" class="card-img-top" alt="lama">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Игрушка мягкая Fortnite "Лама"</h5>
+                                        <div class="card-price">
+                                            <span class="price">8 726 руб.</span>
+                                            <span class="discount">9 725 руб.</span>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer">
+                                        <a href="#" class="btn btn-buy">В корзину</a>                                
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="card card-product">
+                                    <img src="img/lama.png" class="card-img-top" alt="lama">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Игрушка мягкая Fortnite "Лама"</h5>
+                                        <div class="card-price">
+                                            <span class="price">8 726 руб.</span>
+                                            <span class="discount">9 725 руб.</span>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer">
+                                        <a href="#" class="btn btn-buy">В корзину</a>                                
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="card card-product">
+                                    <img src="img/lama.png" class="card-img-top" alt="lama">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Игрушка мягкая Fortnite "Лама"</h5>
+                                        <div class="card-price">
+                                            <span class="price">8 726 руб.</span>
+                                            <span class="discount">9 725 руб.</span>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer">
+                                        <a href="#" class="btn btn-buy">В корзину</a>                                
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                     
+                    </div>
 
-                    <div class="col-3">
-                        <div class="card">
-                            <img src="https://via.placeholder.com/575x275" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                                    content.
-                                </p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                    <!-- slide 2 -->
+                    <div>
+                        <div class="row">
+                            <div class="col-3">
+                                <div class="card card-product">
+                                    <img src="img/lama.png" class="card-img-top" alt="lama">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Игрушка мягкая Fortnite "Лама"</h5>
+                                        <div class="card-price">
+                                            <span class="price">8 726 руб.</span>
+                                            <span class="discount">9 725 руб.</span>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer">
+                                        <a href="#" class="btn btn-buy">В корзину</a>                                
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="col-3">
-                        <div class="card">
-                            <img src="https://via.placeholder.com/575x275" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                                    content.
-                                </p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            <div class="col-3">
+                                <div class="card card-product">
+                                    <img src="img/lama.png" class="card-img-top" alt="lama">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Игрушка мягкая Fortnite "Лама"</h5>
+                                        <div class="card-price">
+                                            <span class="price">8 726 руб.</span>
+                                            <span class="discount">9 725 руб.</span>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer">
+                                        <a href="#" class="btn btn-buy">В корзину</a>                                
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="col-3">
-                        <div class="card">
-                            <img src="https://via.placeholder.com/575x275" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                                    content.
-                                </p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            <div class="col-3">
+                                <div class="card card-product">
+                                    <img src="img/lama.png" class="card-img-top" alt="lama">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Игрушка мягкая Fortnite "Лама"</h5>
+                                        <div class="card-price">
+                                            <span class="price">8 726 руб.</span>
+                                            <span class="discount">9 725 руб.</span>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer">
+                                        <a href="#" class="btn btn-buy">В корзину</a>                                
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="col-3">
-                        <div class="card">
-                            <img src="https://via.placeholder.com/575x275" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                                    content.
-                                </p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            <div class="col-3">
+                                <div class="card card-product">
+                                    <img src="img/lama.png" class="card-img-top" alt="lama">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Игрушка мягкая Fortnite "Лама"</h5>
+                                        <div class="card-price">
+                                            <span class="price">8 726 руб.</span>
+                                            <span class="discount">9 725 руб.</span>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer">
+                                        <a href="#" class="btn btn-buy">В корзину</a>                                
+                                    </div>
+                                </div>
                             </div>
-                        </div>
+                        </div>                      
                     </div>
 
-                </div>                
+                </div>
+
             </div>
         </section>        
 
         <section id="contest">
-<!--             
-            <h2>Конкурс</h2>
             <div class="container">
                 <div class="row">
-                    <div class="col-12">
-                        
+                    <div class="col-3 position-relative">
+                        <img src="img/contest_2.png" alt="" style="position: absolute;bottom: -28px;right: 0;">
                     </div>
+                    <div class="col-6 my-6">
+                        <div class="action-info">
+                            <h2 class="mb-4">Конкурс</h2>
+                            <p>1. Купите в любом магазине <span>партнеров</span> товаров на сумму 2399 р. и сохраните чек</p>
+                            <p><span>2. Зарегистрируйтесь на нашем сайте, указав номер чека</span></p>
+                            <p>3. Ждите еженедельных результатов!</p>
+                        </div>
+                        <button class="btn btn-yellow-buy d-block mx-auto mt-4">Принять участие!</button>                  
+                    </div>
+                    <div class="col-3 position-relative">
+                        <img src="img/contest_1.png" alt="" style="position: absolute;bottom: 0;left: 0;">
+                    </div>               
                 </div>
-            </div> -->
+            </div>
 
-            <img class="img-fluid" src="img/konkurs.png" alt="">
+            <!-- <img class="img-fluid" src="img/konkurs.png" alt=""> -->
         </section>        
 
-        <section id="buy">
+        <section id="buy" class="my-6">
             <div class="container">
                 <div class="row">
-                    <div class="col-12">
+                    <div class="col-12 mb-5">
                         <h2>Где купить?</h2>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-12">
-                        <div class="responsive-slider">
-                            <div>
+                        <div class="partners-slider">
+                            <a href="#">
                                 <img class="img-fluid" src="img/toyru.png" alt="">
-                            </div>
-                            <div>
+                            </a>
+                            <a href="#">
                                 <img class="img-fluid" src="img/mytoys.png" alt="">
-                            </div>
-                            <div>
+                            </a>
+                            <a href="#">
                                 <img class="img-fluid" src="img/korablik.png" alt="">
-                            </div>
-                            <div>
+                            </a>
+                            <a href="#">
                                 <img class="img-fluid" src="img/dochki.png" alt="">
-                            </div>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -298,10 +474,10 @@
     </main>
 
     <footer id="footer">
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
                 <div class="col-4">
-                    <div class="nav flex-column">
+                    <div class="nav flex-column text-center py-6">
                         <a href="#">Instagram</a>
                         <a href="#">Facebook</a>
                         <a href="#">Twitter</a>
@@ -309,13 +485,13 @@
                         <a href="#">LinkedIn</a>
                     </div>
                 </div>
-                <div class="col-4">
-                    <img class="d-block" src="img/Logo.png" alt="">
-                    <img class="d-block" src="img/jazwares.png" alt="">
-                    <img class="d-block" src="img/footer-lamas.png" alt="">
+                <div class="col-4 border-left border-right py-6">
+                    <img class="d-block mb-4 mx-auto" src="img/Logo.png" alt="">
+                    <img class="d-block mb-4 mx-auto" src="img/jazwares.png" alt="">
+                    <img class="d-block mx-auto" src="img/footer-lamas.png" alt="">
                 </div>
                 <div class="col-4">
-                    <div class="nav flex-column">
+                    <div class="nav flex-column text-center py-6">
                         <a href="#">Об игре</a>
                         <a href="#">Персонажи</a>
                         <a href="#">Каталог</a>

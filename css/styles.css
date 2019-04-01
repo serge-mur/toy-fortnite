@@ -70,9 +70,31 @@ h2 {
     background-color: #2a2a2a;
 }
 
+.navbar-nav .nav-item .nav-link {
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: #b6b6b6;
+    text-decoration: none;
+    padding: .5rem 1rem;
+    border-bottom: 4px solid transparent;    
+}
+.navbar-nav .nav-item .nav-link:hover {
+    border-bottom: 4px solid #feff00;
+}
+
+
 .navbar-toggler {
     color: rgba(255, 255, 255, 0.5);
     border-color: rgba(255, 255, 255, 0.1);
+}
+
+.main-slider-wrapper {
+    position: relative;
+}
+.main-banners {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
 
 #novelty h2 {
@@ -132,11 +154,23 @@ h2 {
 }
 
 
-#winners {
+#winners,
+#contest {
     background: linear-gradient(to bottom, #fc404f, #fec41b);
 }
 #winners h2 {
     color: #fff;
+}
+#winners ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+#winners ul li {
+    font-family: 'Burbank Big Cd Bk', Arial;
+    color: #000;
+    font-size: 3rem;
+    line-height: 1.1;
 }
 #characters {
     background: url(../img/blue-bg.jpg) center no-repeat;
@@ -145,6 +179,45 @@ h2 {
     color: #fff;
     text-align: center;
 }
+#characters .character-wrapper {
+    background-color: #19c2fd;
+}
+#characters .character-nav .title {
+    background: url(../img/title.png) no-repeat;
+    background-size: contain;
+    font-family: 'Burbank Big Cd Bk', Arial;
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: #018ec4;
+    text-align: center;
+}
+#characters .character-wrapper .info {
+    background-color: #00316c;
+}
+#characters .character-wrapper .info h3 {
+    font-family: 'Burbank Big Cd Bk', Arial;    
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: #fff;
+}
+#characters .character-wrapper .info p { 
+    font-size: 1rem;
+    color: #fff;
+}
+.btn-yellow-buy {
+    font-family: 'Burbank Big Cd Bk', Arial;        
+    background-color: #fdfc01;
+    color: #000;
+    font-size: 2rem;
+    text-transform: uppercase;
+    border-radius: 0;
+    text-decoration: none;
+    padding: 0 3rem;
+}
+.btn-yellow-buy:hover {
+    background-color: #fc404e;
+}
+
 #toys h2 {
     color: #c128e2;
     text-align: center;    
@@ -153,9 +226,31 @@ h2 {
     color: #c128e2;
     text-align: center;    
 }
-
+#contest h2 {
+    color: #fff;
+    text-align: center;        
+}
+.action-info {
+    font-family: 'Burbank Big Cd Bk', Arial;   
+    font-size: 1.875rem;
+    line-height: 1.1;
+    color: #fff;
+    text-transform: uppercase;
+}
+.action-info span {
+    color: #fbfd02;
+}
 #footer {
     background-color: #2a2a2a;
+}
+#footer .nav a {
+    color: #afafaf;
+    font-size: 1.125rem;
+    line-height: 2;
+    text-decoration: none;
+}
+#footer .nav a:hover {
+    text-decoration: underline;
 }
 
 /*
@@ -191,3 +286,11 @@ Custom media queries
 }
 
 /* other css */
+.my-6 {
+    margin-top: 5rem !important;    
+    margin-bottom: 5rem !important;    
+}
+.py-6 {
+    padding-top: 5rem !important;    
+    padding-bottom: 5rem !important;    
+}
