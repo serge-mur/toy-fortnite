@@ -1,28 +1,28 @@
 $(document).ready(function () {
 
-    $("#main-menu .nav-link").on("click", function (event) {
+    $("#main-menu .nav-link, .more, .more2").on("click", function (event) {
         event.preventDefault();
         var id  = $(this).attr('href'),
             top = $(id).offset().top;
         $('body,html').animate({scrollTop: top}, 1000);
     });
 
-// back to top
-    // $(window).scroll(function () {
-    //     if ($(this).scrollTop() > 50) {
-    //         $('#back-to-top').fadeIn();
-    //     } else {
-    //         $('#back-to-top').fadeOut();
-    //     }
-    // });
-    // // scroll body to 0px on click
-    // $('#back-to-top').click(function () {
-    //     event.preventDefault();          
-    //     $('body,html').animate({
-    //         scrollTop: 0
-    //     }, 800);
-    //     return false;
-    // });
+    // back to top
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 50) {
+            $('#back-to-top').fadeIn();
+        } else {
+            $('#back-to-top').fadeOut();
+        }
+    });
+    // scroll body to 0px on click
+    $('#back-to-top').click(function () {
+        event.preventDefault();          
+        $('body,html').animate({
+            scrollTop: 0
+        }, 800);
+        return false;
+    });
 
 
     $('.main-slider').slick({
@@ -40,7 +40,6 @@ $(document).ready(function () {
     });
 
     $('.partners-slider').slick({
-        dots: true,
         infinite: true,
         speed: 300,
         slidesToShow: 4,

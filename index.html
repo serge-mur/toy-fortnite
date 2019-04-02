@@ -27,7 +27,7 @@
                     </button>
 
                     <div class="collapse navbar-collapse" id="navbarsDefault">
-                        <ul class="navbar-nav" id="main-menu">
+                        <ul class="navbar-nav w-100" id="main-menu">
                             <li class="nav-item">
                                 <a class="nav-link" href="#novelty">Новинки</a>
                             </li>
@@ -44,7 +44,7 @@
                                 <a class="nav-link" href="#contest">Конкурс</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#buy">Где купить?</a>
+                                <a class="nav-link" href="#buy">Где&nbsp;купить?</a>
                             </li>
                         </ul>
                     </div>
@@ -65,7 +65,10 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-4">
-                            <img class="img-fluid" src="img/Yellow.png" alt="">
+                            <div class="position-relative">
+                                <img class="img-fluid" src="img/Yellow.png" alt="">
+                                <a class="more" href="#contest">Подробности ниже</a>
+                            </div>
                         </div>
                         <div class="col-8">
                             <img class="img-fluid" src="img/2x2.png" alt="">
@@ -160,7 +163,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-6">
-                        <img class="img-fluid" src="img/gift.png" alt="">
+                        <a class="more2" href="#contest"><img class="img-fluid" src="img/gift.png" alt=""></a>
                     </div>                    
                     <div class="col-6">
                         <h2 class="mb-4">Счастливые победители прошлой недели</h2>
@@ -273,7 +276,7 @@
 
         </section>
 
-        <section id="toys" class="my-6">
+        <section id="toys" class="py-6">
             <div class="container">
                 <div class="row">
                     <div class="col-12 mb-4">
@@ -425,7 +428,7 @@
                     <div class="col-3 position-relative">
                         <img src="img/contest_2.png" alt="" style="position: absolute;bottom: -28px;right: 0;">
                     </div>
-                    <div class="col-6 my-6">
+                    <div class="col-6 my-6 ml-0 mr-0">
                         <div class="action-info">
                             <h2 class="mb-4">Конкурс</h2>
                             <p>1. Купите в любом магазине <span>партнеров</span> товаров на сумму 2399 р. и сохраните чек</p>
@@ -443,7 +446,7 @@
             <!-- <img class="img-fluid" src="img/konkurs.png" alt=""> -->
         </section>        
 
-        <section id="buy" class="my-6">
+        <section id="buy" class="py-6">
             <div class="container">
                 <div class="row">
                     <div class="col-12 mb-5">
@@ -465,6 +468,9 @@
                             <a href="#">
                                 <img class="img-fluid" src="img/dochki.png" alt="">
                             </a>
+                            <a href="#">
+                                <img class="img-fluid" src="img/toyru.png" alt="">
+                            </a>                            
                         </div>
                     </div>
                 </div>
@@ -502,6 +508,8 @@
             </div>
         </div>
     </footer>
+
+    <div id="back-to-top"></div>
 
     <script src="libs/jquery-3.3.1.min.js"></script>
     <script src="libs/popper.min.js"></script>
