@@ -234,10 +234,11 @@ h2 {
     background-color: #fdfc01;
     color: #000;
     font-size: 2rem;
+    line-height: 1.1;
     text-transform: uppercase;
     border-radius: 0;
     text-decoration: none;
-    padding: 0 3rem;
+    padding: .5rem 3rem;
 }
 .btn-yellow-buy:hover {
     background-color: #fc404e;
@@ -381,11 +382,30 @@ M E D I A  Q U E R I E S
 Custom media queries
 */
  
-@media (max-width: 575px) { 
-
+@media (max-width: 575px) {
+    .slick-prev,
+    .slick-next {
+        display: none!important;
+    }
+    #winners ul li {
+        font-size: 2rem;
+    }
+    h2 {
+        font-size: 2.5rem;
+    }
+    #characters .character-nav .title {
+        background-image: none;
+        background-color: #fbfd02;
+        margin: 0 1rem;
+    }
 }
-@media (max-width: 767px) { 
-
+@media (max-width: 1024px) {
+    .navbar-nav .nav-item .nav-link {
+        text-align: center;
+    }
+    .navbar-nav .nav-item .nav-link:hover {
+        border-bottom: 4px solid transparent;
+    }
 }
 
 /* other css */
