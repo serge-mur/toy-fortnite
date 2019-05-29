@@ -66,4 +66,21 @@ $(document).ready(function () {
         console.log('mobile');
     }
 
+    $(".slide-characters .img-link").click(function(event) {
+        event.preventDefault();
+        $(".slide-characters .character-img").children().not("#"+this.id).addClass('d-none');
+        $(".slide-characters .character-img").children("#"+this.id).removeClass('d-none');
+        $(".slide-characters .character-wrapper").children(".info").not('#'+this.id).addClass('d-none');
+        $(".slide-characters .character-wrapper").children(".info#"+this.id).removeClass('d-none');
+    });
+
+    $(".slide-kits .img-link").click(function(event) {
+        event.preventDefault();
+        $(".slide-kits .character-img").children().not("#"+this.id).addClass('d-none');
+        $(".slide-kits .character-img").children("#"+this.id).removeClass('d-none');
+        $(".slide-kits .character-wrapper").children(".info").not('#'+this.id).addClass('d-none');
+        $(".slide-kits .character-wrapper").children(".info#"+this.id).removeClass('d-none');
+    });
+
+
 });
